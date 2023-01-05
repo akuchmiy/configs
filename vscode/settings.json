@@ -1,0 +1,79 @@
+{
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "explorer.autoReveal": false,
+  "editor.mouseWheelScrollSensitivity": 1,
+  "editor.smoothScrolling": false,
+
+  "workbench.colorTheme": "Jetbrains Fleet",
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#6bdeeb",
+    "editor.selectionBackground": "#2a4346",
+    "editor.selectionHighlightBackground": "#2a4346",
+    "editor.selectionHighlightBorder": "#5d9397"
+  },
+
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // },
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "[Jetbrains Fleet]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "entity.name.type.class",
+          "settings": {
+            "fontStyle": "underline"
+          }
+        }
+      ]
+    },
+    "[Subliminal Next]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "entity.name.type.class",
+          "settings": {
+            "fontStyle": "underline"
+          }
+        }
+      ]
+    }
+  },
+  "editor.lineNumbers": "relative",
+
+  // VIM ----------------------
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "zz"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "zz"]
+    }
+  ],
+
+  // Security ------------------
+  "security.workspace.trust.untrustedFiles": "open"
+}
