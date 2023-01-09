@@ -25,40 +25,78 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  // ----------- colors customizations -----------------
+
+  "editor.semanticTokenColorCustomizations": {
+    "[Jetbrains Fleet]": {
+      "rules": {
+        "property.declaration": "#af9cff",
+        "property": "#af9cff",
+        "enumMember": "#af9cff",
+        "method.declaration": {
+          "foreground": "#8dd1f0",
+          "italic": true,
+          "bold": false
+        },
+        "function": {
+          "foreground": "#8dd1f0",
+          "italic": true,
+          "bold": false
+        },
+        "method": {
+          "foreground": "#8dd1f0",
+          "italic": true,
+          "bold": false
+        }
+      }
+    }
+  },
+
   "editor.tokenColorCustomizations": {
     "[Jetbrains Fleet]": {
       "textMateRules": [
         {
           "scope": "entity.name.function",
           "settings": {
+            "foreground": "#8dd1f0",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "string.regexp.ts",
+          "settings": {
+            "foreground": "#E394DC",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.definition.string.begin",
+            "punctuation.definition.string.end"
+          ],
+          "settings": {
+            "foreground": "#fff",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable.other.property",
+          "settings": {
+            "foreground": "#af9cff",
             "fontStyle": "italic"
           }
         },
         {
           "scope": "entity.name.type.class",
           "settings": {
-            "fontStyle": "underline"
-          }
-        }
-      ]
-    },
-    "[Subliminal Next]": {
-      "textMateRules": [
-        {
-          "scope": "entity.name.function",
-          "settings": {
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": "entity.name.type.class",
-          "settings": {
+            "foreground": "#efb080",
             "fontStyle": "underline"
           }
         }
       ]
     }
   },
+
   "editor.lineNumbers": "relative",
 
   // VIM ----------------------
